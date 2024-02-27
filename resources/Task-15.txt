@@ -10,7 +10,7 @@ TASK-15 - Running tests with Selenium
       - (a) Java 11 чи вища (в нашому випадку мусить бути Java 21)
       - (b) Браузери у системі
       - (c) Драйвери браузерів
-            - (i) За необхідності, Selenium Mannager сконфігурує їх автоматично за допомогою папаметру --selenium-manager true
+            - (i) За необхідності, Selenium Mannager сконфігурує їх автоматично за допомогою  --selenium-manager true
             - (ii) Але десь з версії 4.3 це нібито відбуваєтсья автоматично
       - (d) Завантажте останню версію selenium-server*.jar із https://github.com/SeleniumHQ/selenium/releases/latest
 
@@ -32,3 +32,28 @@ Based on https://www.selenium.dev/documentation/grid/getting_started/
 
 -----------------------------------------------------------------------------------------------------------------------
 
+(1) Налаштувати Selenium Grid.
+
+(1.1) Пререквізити
+      - (a) Створив новий проект на Java 21.
+      - (b) Браузери у системі вже є у наяві: Chrome, Edge, FireFox.
+      - (c) Драйвери браузерів
+            - (i) За необхідності, Selenium Mannager сконфігурує їх автоматично за допомогою  --selenium-manager true
+            - (ii) Але десь з версії 4.3 це нібито відбуваєтсья автоматично
+      - (d) Завантажив останню версію selenium-server-4.18.1.jar
+
+(1.2) У терміналі Windows PowerShell запустив  Selenium Grid:
+      PS C:\Users\rishe\OneDrive\Documents\AQA-Java\SeleniumServerGrid> java -jar ./selenium-server-4.18.1.jar standalone
+      (screenshot "1-2_*.png" attached).
+
+(1.3) У Google Chrome відкрив http://localhost:4444/ -> дашборд "Selenium Grid 4.18.1 (revision b1d3319b48)"
+      (screenshot "1-3_*.png" attached).
+
+(1.4) Скопіюйте звідти значення параметру "URI" - це буде URL брокера
+(1.5) Драйвер ініціалізується якось так:
+       var gridUrl = "http://192.168.88.18:4444/";
+       var options = new ChromeOptions();
+//       var options = new FirefoxOptions();
+//       var options = new SafariOptions();
+       driver = new RemoteWebDriver(new URL(gridUrl), options);
+Based on https://www.selenium.dev/documentation/grid/getting_started/
