@@ -24,7 +24,8 @@ TASK-15 - Running tests with Selenium
 //       var options = new FirefoxOptions();
 //       var options = new SafariOptions();
        driver = new RemoteWebDriver(new URL(gridUrl), options);
-Based on https://www.selenium.dev/documentation/grid/getting_started/
+
+(Based on https://www.selenium.dev/documentation/grid/getting_started/)
 
 (2) Запустити принаймні один сценарій на двох різних браузерах.
 
@@ -49,11 +50,19 @@ Based on https://www.selenium.dev/documentation/grid/getting_started/
 (1.3) У Google Chrome відкрив http://localhost:4444/ -> дашборд "Selenium Grid 4.18.1 (revision b1d3319b48)"
       (screenshot "1-3_*.png" attached).
 
-(1.4) Скопіюйте звідти значення параметру "URI" - це буде URL брокера
+(1.4) Скопіював звідти значення параметру "URI" = URL брокера -> http://192.168.0.102:4444
+
+--------
+
 (1.5) Драйвер ініціалізується якось так:
        var gridUrl = "http://192.168.88.18:4444/";
        var options = new ChromeOptions();
 //       var options = new FirefoxOptions();
 //       var options = new SafariOptions();
        driver = new RemoteWebDriver(new URL(gridUrl), options);
+
 Based on https://www.selenium.dev/documentation/grid/getting_started/
+
+(2) Запустити принаймні один сценарій на двох різних браузерах.
+
+(3) Додати скріншот дашборда Selenium Grid.
