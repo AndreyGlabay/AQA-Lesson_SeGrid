@@ -51,6 +51,7 @@ TASK-15 - Running tests with Selenium
       (screenshot "1-3_*.png" attached).
 
 (1.4) Скопіював звідти значення параметру "URI" = URL брокера -> http://192.168.0.102:4444
+      (screenshot "1-4_*.png" attached).
 
 --------
 

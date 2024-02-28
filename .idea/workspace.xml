@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="534f37f6-c2ba-4ed7-9da7-e4238141cd6c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Task-15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Task-15.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "onboarding.tips.debug.path": "C:/Users/rishe/IdeaProjects/AQA-Lesson_SeGrid/src/main/java/com/example/school/test/Main.java"
   }
 }]]></component>
