@@ -64,6 +64,12 @@ TASK-15 - Running tests with Selenium
 
 Based on https://www.selenium.dev/documentation/grid/getting_started/
 
+--------------
+
 (2) Запустити принаймні один сценарій на двох різних браузерах.
+
+(2.1) Зробив тестовий класс LoginPage.java та у ньому імплементував процедуру логіну на сайт "https://www.saucedemo.com/"
+
+
 
 (3) Додати скріншот дашборда Selenium Grid.
