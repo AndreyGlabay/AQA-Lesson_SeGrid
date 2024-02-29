@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InventoryPage {
+public class InventoryPage { // (2.1) Create the test class and implement Page Object for the items' inventory;
     private WebDriver driver;
     private static final String INVENTORY_ITEMS_LOCATOR = "//div[@id='inventory_container']//div[@class='inventory_item']";
     private static final String INVENTORY_IMAGES_LOCATOR = "//div[@class='inventory_item']//img[@class='inventory_item_img']";

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage {
+public class LoginPage { // (2.1) Create the test class and implement Page Object for the Login flow.
     private WebDriver driver;
     private static final String USERNAME_LOCATOR = "//*[@id=\"user-name\"]";
     private static final String PASSWORD_LOCATOR = "//*[@id=\"password\"]";

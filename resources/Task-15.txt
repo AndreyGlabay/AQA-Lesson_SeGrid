@@ -55,8 +55,8 @@ TASK-15 - Running tests with Selenium
 
 --------
 
-(1.5) Драйвер ініціалізується якось так:
-       var gridUrl = "http://192.168.88.18:4444/";
+(1.5) Драйвер ініціював далі (див. степ 2.4)
+       var gridUrl = "http://192.168.0.102:4444";
        var options = new ChromeOptions();
 //       var options = new FirefoxOptions();
 //       var options = new SafariOptions();
@@ -68,8 +68,17 @@ Based on https://www.selenium.dev/documentation/grid/getting_started/
 
 (2) Запустити принаймні один сценарій на двох різних браузерах.
 
-(2.1) Зробив тестовий класс LoginPage.java та у ньому імплементував процедуру логіну на сайт "https://www.saucedemo.com/"
-
+(2.1) Зробив класс LoginPage.java та у ньому імплементував інстанс логіну на сайт "https://www.saucedemo.com/".
+(2.2) Зробив класс InventoryPage.java та у ньому імплементував інстанси айтемов на сторінці.
+(2.3) Зробив тестовий класс SwagLabsTest.java у якому за використанням Page Object-ів з двох попередніх класів реалізував
+      3 теста:
+      - перевірка логіна з кредами стандартного юзера;
+      - перевірка логіна з кредами заблокованого юзера;
+      - перевірка що можливо використовувати лінки зображень.
+(2.4) У класі SwagLabsTest.java - у кожному з тестових методів ініціював драйвер:
+      - у TestCase1 - Chrome,
+      - у TestCase2 - FireFox,
+      - у TestCase3 - FireFox.
 
 
 (3) Додати скріншот дашборда Selenium Grid.
