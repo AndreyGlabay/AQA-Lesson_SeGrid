@@ -1,6 +1,5 @@
 TASK-15 - Running tests with Selenium
 
-
 (1) За описом у https://lms.ithillel.ua/groups/64e75f863767944827c63379/feed налаштувати Selenium Grid.
 
 ОПИС:
@@ -53,18 +52,8 @@ TASK-15 - Running tests with Selenium
 (1.4) Скопіював звідти значення параметру "URI" = URL брокера -> http://192.168.0.102:4444
       (screenshot "1-4_*.png" attached).
 
---------
-
 (1.5) Драйвер ініціював далі (див. степ 2.4)
-       var gridUrl = "http://192.168.0.102:4444";
-       var options = new ChromeOptions();
-//       var options = new FirefoxOptions();
-//       var options = new SafariOptions();
-       driver = new RemoteWebDriver(new URL(gridUrl), options);
 
-Based on https://www.selenium.dev/documentation/grid/getting_started/
-
---------------
 
 (2) Запустити принаймні один сценарій на двох різних браузерах.
 
