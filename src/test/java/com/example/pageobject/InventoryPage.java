@@ -31,4 +31,3 @@ public class InventoryPage { // (2.1) Create the test class and implement Page O
         return urls;
     }
 }
-

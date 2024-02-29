@@ -1,5 +1,4 @@
 package com.example.test;
-
 import com.example.pageobject.InventoryPage;
 import com.example.pageobject.LoginPage;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +7,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
