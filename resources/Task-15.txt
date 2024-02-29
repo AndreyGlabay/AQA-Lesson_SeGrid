@@ -76,8 +76,8 @@ TASK-15 - Running tests with Selenium
 ------------------------------------------------------------------------------------------------------------------------
 (ADDITIONALLY)
 
-(4) ISSUE-1: resolve the issue with 2 extra and blank Chrome instances ->
-    -> Remove @BeforeTest method with calling the chrome driver, which was remaining from last task;
+(4) ISSUE-1: вирішив проблему  пов'язану з відкриттям 2 зайвих пустих Chrome інстансів ->
+    -> видалив @BeforeTest з викликом Chrome driver, який помилково залишався з минулого завдання;
 
 (5) ISSUE-2: вирішив проблему коли Chrome та FireFox інстанси не зачинялись, хоч це і було імплементовано у @AfterTest->
     -> (a) переніс WebDriver driver декларування з класу до кожного з тестовтих методів,
