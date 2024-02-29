@@ -72,3 +72,16 @@ TASK-15 - Running tests with Selenium
 (3) Додав скріншот дашборда Selenium Grid - /resources/3_SeleniumGridDashboard.png
     - (a) Додав скріншот Chrome інстансу - /resources/3a_GC_instance.png
     - (b) Додав скріншот FireFox інстансу - /resources/3b_FF_instance.png
+
+------------------------------------------------------------------------------------------------------------------------
+(ADDITIONALLY)
+
+(4) ISSUE-1: resolve the issue with 2 extra and blank Chrome instances ->
+    -> Remove @BeforeTest method with calling the chrome driver, which was remaining from last task;
+
+(5) ISSUE-2: вирішив проблему коли Chrome та FireFox інстанси не зачинялись, хоч це і було імплементовано у @AfterTest->
+    -> (a) переніс WebDriver driver декларування з класу до кожного з тестовтих методів,
+    -> (b) також до кожного з тестових методів переніс із @AfterTest затримку на 5 сек,
+    -> (c) та до кожного з тестових методів переніс із @AfterTest завершення роботи драйверу.
+    Видалив пустий @AfterTest.
+    Відтепер вікна-інстанси зачиняються після виконання кожного тесту.
