@@ -80,5 +80,6 @@ Based on https://www.selenium.dev/documentation/grid/getting_started/
       - у TestCase2 - FireFox,
       - у TestCase3 - FireFox.
 
-
-(3) Додати скріншот дашборда Selenium Grid.
+(3) Додав скріншот дашборда Selenium Grid - /resources/3_SeleniumGridDashboard.png
+    - (a) Додав скріншот Chrome інстансу - /resources/3a_GC_instance.png
+    - (b) Додав скріншот FireFox інстансу - /resources/3b_FF_instance.png
